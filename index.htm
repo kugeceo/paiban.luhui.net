@@ -1,11 +1,11 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN" xml:lang="zh_CN">
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_cn" xml:lang="zh_cn">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//en">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=gbk">
-<title>Â³ò³ÎÄ×ÖÔÚÏßÅÅ°æ¹¤¾ß - Â³ò³ÎÄ»¯Íø</title>
+<title>é²è™ºæ–‡å­—åœ¨çº¿æ’ç‰ˆå·¥å…· - é²è™ºæ–‡åŒ–ç½‘</title>
 <link href="images/huakai_pb.css" rel="stylesheet" type="text/css">
-<meta name="keywords" content="ÔÚÏßÅÅ°æ£¬ÂÛÎÄ×Ô¶¯ÅÅ°æ£¬ÎÄ×Ö×Ô¶¯ÅÅ°æ,ÎÄ×ÖÅÅ°æ,ÍøÒ³ÅÅ°æ£¬Ò»¼üÅÅ°æ">
-<meta name="description" content="Â³ò³ÎÄ»¯ÍøÒ»¼üÎÄ×ÖÅÅ°æ¹¤¾ß£¬ÎÄ±¾ÎÄÕÂÒ»¼ü×Ô¶¯ÅÅ°æ¡£">
+<meta name="keywords" content="åœ¨çº¿æ’ç‰ˆï¼Œè®ºæ–‡è‡ªåŠ¨æ’ç‰ˆï¼Œæ–‡å­—è‡ªåŠ¨æ’ç‰ˆ,æ–‡å­—æ’ç‰ˆ,ç½‘é¡µæ’ç‰ˆï¼Œä¸€é”®æ’ç‰ˆ">
+<meta name="description" content="é²è™ºæ–‡åŒ–ç½‘ä¸€é”®æ–‡å­—æ’ç‰ˆå·¥å…·ï¼Œæ–‡æœ¬æ–‡ç« ä¸€é”®è‡ªåŠ¨æ’ç‰ˆã€‚">
 <link href="images/haoyi_pb.htm" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="images/jquery.js"></script>
 <link rel="shortcut icon" href="favicon.ico" />
@@ -19,7 +19,7 @@
 function quickreply(){
 if(formreply.body.value=='')
 { 
-        alert('ÇëÊäÈëÅÅ°æÄÚÈİ!');
+        alert('è¯·è¾“å…¥æ’ç‰ˆå†…å®¹!');
    formreply.body.focus(); 
    return false;
   }else{ 
@@ -29,13 +29,13 @@ if(formreply.body.value=='')
 function format()
 {
         var body = "\n"+document.getElementById("thebody").value;
-        body = body.replace(/ |¡¡/ig,"");
+        body = body.replace(/ |ã€€/ig,"");
         body = body.replace(/\r\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
-        body = body.replace(/\n/ig,"\n\n¡¡¡¡");		
+        body = body.replace(/\n/ig,"\n\nã€€ã€€");		
         body = body.replace("\n\n","");
         document.getElementById("thebody").value=body;
 }
@@ -45,7 +45,7 @@ function format()
 function quickreply(){
 if(formreply.body.value=='')
 { 
-        alert('ÇëÊäÈë»Ø¸´ÄÚÈİ!');
+        alert('è¯·è¾“å…¥å›å¤å†…å®¹!');
    formreply.body.focus(); 
    return false;
   }else{ 
@@ -55,7 +55,7 @@ if(formreply.body.value=='')
 function format2()
 {
         var body = "\n"+document.getElementById("thebody").value;
-        body = body.replace(/ |¡¡/ig,"");
+        body = body.replace(/ |ã€€/ig,"");
         body = body.replace(/\r\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
@@ -68,7 +68,7 @@ function format2()
 function format3()
 {
         var body = "\n"+document.getElementById("thebody").value;
-        body = body.replace(/ |¡¡/ig,"");
+        body = body.replace(/ |ã€€/ig,"");
         body = body.replace(/\r\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
         body = body.replace(/\n\n/ig,"\n");
@@ -83,21 +83,21 @@ function format4()
         var body = document.getElementById("thebody").value;
         for (var ii=0; 100>ii;ii++)
  {
-  body = body.replace("¡¡","");  //È¥³ıÈ«½Ç¿Õ¸ñ
-  body = body.replace(",","£¬");  //Ìæ»»Ó¢ÎÄ±êµã 
-  body = body.replace("......","¡­¡­"); 
-  body = body.replace("¡£¡£¡£¡£¡£¡£","¡­¡­"); 
-  body = body.replace("?","£¿"); 
-  body = body.replace(".","¡£");  
-  body = body.replace(";","£»");  
-  body = body.replace(":","£º"); 
-  body = body.replace("!","£¡"); 
-  body = body.replace("(","£¨"); 
-  body = body.replace(")","£©"); 
-  body = body.replace("----","¡ª¡ª"); 
-  body = body.replace("--","¡ª¡ª"); 
-  body = body.replace("[","£Û"); 
-  body = body.replace("]","£İ"); 
+  body = body.replace("ã€€","");  //å»é™¤å…¨è§’ç©ºæ ¼
+  body = body.replace(",","ï¼Œ");  //æ›¿æ¢è‹±æ–‡æ ‡ç‚¹ 
+  body = body.replace("......","â€¦â€¦"); 
+  body = body.replace("ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚","â€¦â€¦"); 
+  body = body.replace("?","ï¼Ÿ"); 
+  body = body.replace(".","ã€‚");  
+  body = body.replace(";","ï¼›");  
+  body = body.replace(":","ï¼š"); 
+  body = body.replace("!","ï¼"); 
+  body = body.replace("(","ï¼ˆ"); 
+  body = body.replace(")","ï¼‰"); 
+  body = body.replace("----","â€”â€”"); 
+  body = body.replace("--","â€”â€”"); 
+  body = body.replace("[","ï¼»"); 
+  body = body.replace("]","ï¼½"); 
   }
         document.getElementById("thebody").value=body;
 }
@@ -125,10 +125,10 @@ if(!x && document.getElementById) x=document.getElementById(n); return x;
 function chklen() {
   var strlen;
   strlen= KKsForm.Content.value.length;
-  alert("Ä¿Ç°³¤¶È" + strlen + "ÎÄ×Ö\n");
+  alert("ç›®å‰é•¿åº¦" + strlen + "æ–‡å­—\n");
   return;
   }
-   //´ò¿ª´°¿Ú
+   //æ‰“å¼€çª—å£
  
   </script>
 
@@ -178,18 +178,18 @@ table {border-collapse:collapse; margin:0; padding:0;}
 <body><br />
    <div id="header" class="cbody"><a href='/'><img src="images/plogo.png"></a></div><br />
 		<div class="menu">			<ul>
-				<li><a href="http://www.luhui.net/" title="Ê×Ò³" target='_blank'>Ê×Ò³</a></li>
-				<li><a href="http://news.luhui.net/" title="ÎÄÕÂÁĞ±í" target='_blank'>ÎÄÕÂÁĞ±í</a></li>
-				<li><a href="http://mingpian.luhui.net" title="¶şÎ¬ÂëÃûÆ¬" target='_blank'>¶şÎ¬ÂëÃûÆ¬</a></li>
-				<li><a href="http://paiban.luhui.net/" title="ÎÄ×ÖÅÅ°æ" target='_blank'>ÎÄ×ÖÅÅ°æ</a></li>
-				<li><a href="http://wenbenbijiao.luhui.net" title="ÎÄ±¾±È½Ï" target='_blank'>ÎÄ±¾±È½Ï</a></li>
-				<li><a href="http://quchuchongfu.luhui.net" title="È¥³ıÖØ¸´" target='_blank'>È¥³ıÖØ¸´</a></li>
-				<li><a href="http://vip.luhui.net" title="vip½âÎö" target='_blank'>vip½âÎö</a></li>
-				<li><a href="http://changweibo.luhui.net" title="³¤Î¢²©Éú³É" target='_blank'>³¤Î¢²©Éú³É</a></li>
-				<li><a href="http://mima.luhui.net" title="Ëæ»úÃÜÂë" target='_blank'>Ëæ»úÃÜÂë</a></li>
+				<li><a href="http://www.luhui.net/" title="é¦–é¡µ" target='_blank'>é¦–é¡µ</a></li>
+				<li><a href="http://news.luhui.net/" title="æ–‡ç« åˆ—è¡¨" target='_blank'>æ–‡ç« åˆ—è¡¨</a></li>
+				<li><a href="http://mingpian.luhui.net" title="äºŒç»´ç åç‰‡" target='_blank'>äºŒç»´ç åç‰‡</a></li>
+				<li><a href="http://paiban.luhui.net/" title="æ–‡å­—æ’ç‰ˆ" target='_blank'>æ–‡å­—æ’ç‰ˆ</a></li>
+				<li><a href="http://wenbenbijiao.luhui.net" title="æ–‡æœ¬æ¯”è¾ƒ" target='_blank'>æ–‡æœ¬æ¯”è¾ƒ</a></li>
+				<li><a href="http://quchuchongfu.luhui.net" title="å»é™¤é‡å¤" target='_blank'>å»é™¤é‡å¤</a></li>
+				<li><a href="http://vip.luhui.net" title="vipè§£æ" target='_blank'>vipè§£æ</a></li>
+				<li><a href="http://changweibo.luhui.net" title="é•¿å¾®åšç”Ÿæˆ" target='_blank'>é•¿å¾®åšç”Ÿæˆ</a></li>
+				<li><a href="http://mima.luhui.net" title="éšæœºå¯†ç " target='_blank'>éšæœºå¯†ç </a></li>
 				</ul></div>
                <p style="text-align: center;margin: 21px;">
-               <font size="6">Â³ò³ÔÚÏßÎÄ×ÖÅÅ°æ¹¤¾ß</font></p>
+               <font size="6">é²è™ºåœ¨çº¿æ–‡å­—æ’ç‰ˆå·¥å…·</font></p>
     <div class="box">
      <div class="soft">
     <div class="r s_r"></div>
@@ -197,17 +197,17 @@ table {border-collapse:collapse; margin:0; padding:0;}
       <div class="s_text"></div>
       <div class="s_body">
     <form method="POST" name="KKsForm">
-    <textarea name="Content" rows="25" cols="20" id="thebody" class="t14" style="font-family:ËÎÌå;font-size:10.5pt;"></textarea></form></div>					
-    <input onclick="paste('Content')" value="Õ³Ìù½øÀ´" name="Button" title="µã´Ë°´Å¥½«ÄúĞèÒªÅÅ°æµÄÎÄÕÂÕ³ÌùÖÁÎÄ±¾¿òÄÚ" type="button">
-    <input value="Ò»¼üÅÅ°æ" name="body" title="µã´Ë°´Å¥¿ªÊ¼Ò»¼ü×Ô¶¯ÅÅ°æ" class="button" onclick="javascript:format()" type="button">  
-    <input value="É¾³ı¿ÕĞĞ" name="body1" title="½öÓÃÓÚÉ¾³ıÎÄÕÂÄÚ¶àÓà¿ÕĞĞ¼°¿Õ¸ñ" class="button" onclick="javascript:format2()" type="button">   
+    <textarea name="Content" rows="25" cols="20" id="thebody" class="t14" style="font-family:å®‹ä½“;font-size:10.5pt;"></textarea></form></div>					
+    <input onclick="paste('Content')" value="ç²˜è´´è¿›æ¥" name="Button" title="ç‚¹æ­¤æŒ‰é’®å°†æ‚¨éœ€è¦æ’ç‰ˆçš„æ–‡ç« ç²˜è´´è‡³æ–‡æœ¬æ¡†å†…" type="button">
+    <input value="ä¸€é”®æ’ç‰ˆ" name="body" title="ç‚¹æ­¤æŒ‰é’®å¼€å§‹ä¸€é”®è‡ªåŠ¨æ’ç‰ˆ" class="button" onclick="javascript:format()" type="button">  
+    <input value="åˆ é™¤ç©ºè¡Œ" name="body1" title="ä»…ç”¨äºåˆ é™¤æ–‡ç« å†…å¤šä½™ç©ºè¡ŒåŠç©ºæ ¼" class="button" onclick="javascript:format2()" type="button">   
     <font color="#008000">
-	<input class="button" title="×Ô¶¯¶Î¼ä¿ÕĞĞ×Ô¶¯ÅÅ°æ" onclick="javascript:format3()" value="Ìí¼Ó¿ÕĞĞ" name="body3" type="button"></font> 
-    <input value="ÎÄÕÂ×ÖÊıÍ³¼Æ" name="len" title="Í³¼ÆÎÄ±¾¿òÄÚµÄÎÄ×Ö¸öÊı" class="button" onclick="chklen()" ¡µ="" <input="" type="button">
-    <input onclick="copy('Content')" value="¸´ÖÆÎÄÕÂ" name="cmdok" title="¸´ÖÆÒÑÅÅ°æºóµÄÎÄ±¾ÄÚÈİ" type="button"> 
-    <input value="Çå¿ÕÄÚÈİ" title="Çå¿ÕÄÚÈİ" name="cmdReset" type="reset">
-     <a href='http://www.2mfa.cn'target="_blank" class="button">·ÖÀàÍøÕ¾ÍÆ¹ã</a> </div></div>
-    <div id="footer" style="font-family:ËÎÌå" class="cbody">
+	<input class="button" title="è‡ªåŠ¨æ®µé—´ç©ºè¡Œè‡ªåŠ¨æ’ç‰ˆ" onclick="javascript:format3()" value="æ·»åŠ ç©ºè¡Œ" name="body3" type="button"></font> 
+    <input value="æ–‡ç« å­—æ•°ç»Ÿè®¡" name="len" title="ç»Ÿè®¡æ–‡æœ¬æ¡†å†…çš„æ–‡å­—ä¸ªæ•°" class="button" onclick="chklen()" ã€‰="" <input="" type="button">
+    <input onclick="copy('Content')" value="å¤åˆ¶æ–‡ç« " name="cmdok" title="å¤åˆ¶å·²æ’ç‰ˆåçš„æ–‡æœ¬å†…å®¹" type="button"> 
+    <input value="æ¸…ç©ºå†…å®¹" title="æ¸…ç©ºå†…å®¹" name="cmdReset" type="reset">
+     <a href='http://www.2mfa.cn'target="_blank" class="button">åˆ†ç±»ç½‘ç«™æ¨å¹¿</a> </div></div>
+    <div id="footer" style="font-family:å®‹ä½“" class="cbody">
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
@@ -218,7 +218,7 @@ table {border-collapse:collapse; margin:0; padding:0;}
 
 
 
-<!--°Ù¶È×Ô¶¯ÍÆËÍ´úÂë-->
+<!--ç™¾åº¦è‡ªåŠ¨æ¨é€ä»£ç -->
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -227,14 +227,14 @@ table {border-collapse:collapse; margin:0; padding:0;}
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-<!--°Ù¶È×Ô¶¯ÍÆËÍ´úÂë-->
+<!--ç™¾åº¦è‡ªåŠ¨æ¨é€ä»£ç -->
 
 
-<!-- ÍøÖ·°²È«²å¼ş¿ªÊ¼ -->
+<!-- ç½‘å€å®‰å…¨æ’ä»¶å¼€å§‹ -->
 <script type="text/javascript">
 	var _svq_ = _svq_ || [];
 	_svq_.push(['set_api_key', '16adflfafads9gf28327005056b68c3d']);
-	_svq_.push(['set_noicon_class', '']); //Á´½ÓÇ°²»ÏÔÊ¾ÈÎºÎÍ¼±ê£¬Èç¹ûĞèÒªÏÔÊ¾£¬ÇëÈ¥µôÕâ¾ä
+	_svq_.push(['set_noicon_class', '']); //é“¾æ¥å‰ä¸æ˜¾ç¤ºä»»ä½•å›¾æ ‡ï¼Œå¦‚æœéœ€è¦æ˜¾ç¤ºï¼Œè¯·å»æ‰è¿™å¥
 	_svq_.push(['set_nopopup_class', '-sv-no-popup']); 
 	_svq_.push(['check_page']);
 	(function(){   
@@ -247,7 +247,7 @@ table {border-collapse:collapse; margin:0; padding:0;}
 		s.parentNode.insertBefore(aq, s); 
 	})();
 </script>	
-<!-- ÍøÖ·°²È«²å¼ş½áÊø --> 
+<!-- ç½‘å€å®‰å…¨æ’ä»¶ç»“æŸ --> 
 
 <div style="display:none">
     <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
@@ -255,7 +255,7 @@ table {border-collapse:collapse; margin:0; padding:0;}
 
 <div class="copyright pr" style="text-align: center; margin-left: 0px;">
 	<p>
-		Copyright&nbsp;2004-01-11&nbsp;luhui.net&nbsp;°æÈ¨ËùÓĞ
+		Copyright&nbsp;2004-01-11&nbsp;luhui.net&nbsp;ç‰ˆæƒæ‰€æœ‰
 	</p>
 </div>
 
